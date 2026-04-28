@@ -1,0 +1,87 @@
+{
+  "generation_id": "gen-2026-04-28-canadian-car-and-truck-rentals-sales-lea-c70bf1",
+  "company": "Canadian Car and Truck Rentals, Sales & Leasing",
+  "industry": "auto rental and sales",
+  "slug": "canadian-car-and-truck-rentals-sales-lea-c70bf1",
+  "rolled_at": "2026-04-28T20:47:30Z",
+
+  "archetype": "G",
+  "style": "S5",
+  "voice_family": "V6",
+
+  "scene_variant": "V2",
+  "motion_variant": "M3",
+  "card_variant": "CV3",
+  "hero_overlay_variant": "HO2",
+  "hero_text_pattern": "H4",
+  "hero_entrance": "E3",
+  "header_variant": "split-utility",
+  "footer_variant": "FT6",
+
+  "pdp_variant": null,
+  "about_variant": "AB3",
+  "benefits_variant": "BN1",
+  "contact_variant": "CT1",
+  "work_variant": null,
+  "shop_variant": null,
+  "featured_products_variant": null,
+  "stats_variant": "ST1",
+  "testimonials_variant": null,
+  "cta_variant": "CTA2",
+
+  "booking_pattern": "page-cinematic",
+  "hero_treatment": "static-imagery-parallax",
+  "glass_material": "brushed-metal",
+  "motion_vocabulary": "ease-cinematic",
+  "background_treatment": "layered-photography-parallax",
+  "card_material_variant": "brushed-metal-hover",
+  "motion_bg_pattern": "geometric-grid-pulse",
+  "motion_bg_density": "subtle",
+
+  "color_variant": "graphite-steel",
+  "color_profile": {
+    "luminance": "dark",
+    "tone_modifier": "industrial",
+    "background": {
+      "page": "#0b0d10",
+      "elevated": "#13171c",
+      "section_alt": "#171b21"
+    },
+    "text": {
+      "hero": "#ffffff",
+      "body": "rgba(236,239,244,0.78)",
+      "eyebrow": "rgba(255,170,64,0.92)",
+      "muted": "rgba(236,239,244,0.55)"
+    },
+    "accent": {
+      "primary": "#ffaa40",
+      "primary_hover": "#ffb961",
+      "rule_line": "rgba(255,170,64,0.35)"
+    },
+    "card_overlay": {
+      "tint": "rgba(19,23,28,0.82)",
+      "blur": "md",
+      "border": "1px solid rgba(255,255,255,0.06)"
+    },
+    "contrast_audit": {
+      "hero_h1_vs_dark_bg": { "ratio": 19.5, "level": "AAA" },
+      "body_vs_page_bg": { "ratio": 11.7, "level": "AAA" },
+      "eyebrow_vs_page_bg": { "ratio": 8.4, "level": "AAA" },
+      "cta_text_vs_button_bg": { "ratio": 7.2, "level": "AAA" }
+    }
+  },
+
+  "industry_object": "industrial yard at golden hour with rental fleet staged in geometric formation",
+  "accent_motion_variant": null,
+  "scroll_3d_preset": null,
+
+  "auth_strategy": "none",
+  "subscribers_enabled": false,
+  "engine_id": "booking",
+
+  "fonts": {
+    "display": "Geist",
+    "body": "Geist",
+    "mono": "Geist Mono"
+  }
+}

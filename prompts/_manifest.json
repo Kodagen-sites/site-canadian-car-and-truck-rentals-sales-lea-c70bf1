@@ -1,0 +1,37 @@
+{
+  "mode": "prompt-only",
+  "reason": "GEMINI_API_KEY not provided in unattended run; prompts saved for owner regeneration",
+  "archetype": "G",
+  "style": "S5 industrial-precision",
+  "scenes": [
+    {
+      "id": "scene-1-hero",
+      "purpose": "Static parallax hero asset (no Veo motion in this build)",
+      "nano_banana_prompt": "Wide cinematic photograph of an industrial automotive rental yard at golden hour, in Langley, British Columbia. Geometric formation of vehicles staged in two rows: in the foreground left, a working pickup truck in matte graphite; mid-frame center, a moving cube van; mid-frame right, a 7-passenger SUV; background right, a utility trailer. Asphalt with painted yellow lane markings, low-rise warehouse silhouette behind, mountains faintly visible at the horizon. Light: low orange sun raking from camera right, long machine-shadow rakes across the lot, no humans, no logos visible, cinematic 35mm depth of field, slight haze. Mood: practical, industrial, working yard, not luxury showroom. Aspect 16:9, 4K, photoreal, color graded warm graphite + amber accent.",
+      "negative": "no exotic supercars, no luxury logos, no neon, no nighttime, no rain, no fictional vehicles, no people, no text overlay"
+    },
+    {
+      "id": "section-2-fleet-grid",
+      "purpose": "Six service category cards (one image per card)",
+      "nano_banana_prompts": [
+        "Compact car parked in industrial yard, three-quarter front, matte graphite asphalt, cinematic side light, 35mm, no text",
+        "12-passenger van side-on in warehouse loading area, working light, no driver, 35mm, no text",
+        "16-foot moving cube truck in residential street being loaded with boxes, dusk, no people, no logo, 35mm",
+        "Open utility trailer with hitch on a graded-gravel work yard, sunlight raking, no cargo, 35mm",
+        "Used pickup truck with for-sale yellow paint marker on windshield in lot, three-quarter, 35mm",
+        "Plain working desk with vehicle keys and a clipboard on it, top-down, warm light, no faces, 35mm"
+      ]
+    },
+    {
+      "id": "section-3-process-block",
+      "purpose": "Single supporting photograph for the four-step Process section",
+      "nano_banana_prompt": "Photograph of a yard staff member's hands (no face) doing a vehicle walk-around inspection on a pickup truck — clipboard with form in left hand, right hand on the door handle. Soft directional light, tight crop, working uniform sleeve, asphalt floor. Photoreal, 35mm, no logos visible.",
+      "negative": "no faces, no model release subjects, no branded clothing, no blurry phone shot"
+    }
+  ],
+  "veo_prompts": [],
+  "notes": [
+    "Hero treatment is static-imagery-parallax — no Veo motion required for this archetype-G build.",
+    "If the operator later wants motion, the manifest can be re-rolled with hero_treatment: video-loop-fullbleed and Veo prompts will be regenerated."
+  ]
+}
