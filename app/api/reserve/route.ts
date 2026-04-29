@@ -25,7 +25,8 @@ export async function POST(req: Request) {
   }
 
   const supabase = await createClient();
-  const { error } = await supabase.from("reservations").insert({
+  const { error } = await supabase.from("tenant_reservations").insert({
+    site_id: process.env.SITE_ID!,
     vehicle_class: body.vehicle_class,
     pickup_date: body.pickup_date || null,
     return_date: body.return_date || null,

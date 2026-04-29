@@ -19,6 +19,7 @@ export async function createClient() {
     process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://placeholder.supabase.invalid",
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "placeholder-anon-key",
     {
+      db: { schema: "kodagen" },
       cookies: {
         getAll: () => cookieStore.getAll(),
         setAll: (cookiesToSet: { name: string; value: string; options: CookieOptions }[]) => {

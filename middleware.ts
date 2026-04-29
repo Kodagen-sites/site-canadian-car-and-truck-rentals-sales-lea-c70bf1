@@ -23,6 +23,7 @@ export async function middleware(request: NextRequest) {
   }
 
   const supabase = createServerClient(url, anon, {
+      db: { schema: "kodagen" },
     cookies: {
       getAll() {
         return request.cookies.getAll();

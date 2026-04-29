@@ -7,9 +7,9 @@ async function getCounts() {
   if (!isSupabaseConfigured()) return null;
   const supabase = await createClient();
   const [inq, res, inv] = await Promise.all([
-    supabase.from("inquiries").select("*", { count: "exact", head: true }),
-    supabase.from("reservations").select("*", { count: "exact", head: true }),
-    supabase.from("inventory").select("*", { count: "exact", head: true }),
+    supabase.from("tenant_inquiries").select("*", { count: "exact", head: true }),
+    supabase.from("tenant_reservations").select("*", { count: "exact", head: true }),
+    supabase.from("tenant_inventory").select("*", { count: "exact", head: true }),
   ]);
   return {
     inquiries: inq.count ?? 0,

@@ -24,7 +24,8 @@ export async function POST(req: Request) {
   }
 
   const supabase = await createClient();
-  const { error } = await supabase.from("inquiries").insert({
+  const { error } = await supabase.from("tenant_inquiries").insert({
+    site_id: process.env.SITE_ID!,
     name,
     email,
     phone: phone ?? null,
