@@ -1,62 +1,44 @@
+import { redirect } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
 import Link from "next/link";
-import { createClient, isSupabaseConfigured } from "@/lib/supabase/server";
 
-export const dynamic = "force-dynamic";
-
-async function getCounts() {
-  if (!isSupabaseConfigured()) return null;
+export default async function DashboardPage() {
   const supabase = await createClient();
-  const [inq, res, inv] = await Promise.all([
-    supabase.from("tenant_inquiries").select("*", { count: "exact", head: true }),
-    supabase.from("tenant_reservations").select("*", { count: "exact", head: true }),
-    supabase.from("tenant_inventory").select("*", { count: "exact", head: true }),
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) redirect("/admin/login");
+
+  const siteId = process.env.SITE_ID!;
+  const [{ count: inq }, { count: res }, { count: prod }, { count: ord }] = await Promise.all([
+    supabase.from("tenant_inquiries").select("*", { count: "exact", head: true }).eq("site_id", siteId),
+    supabase.from("tenant_reservations").select("*", { count: "exact", head: true }).eq("site_id", siteId),
+    supabase.from("tenant_products").select("*", { count: "exact", head: true }).eq("site_id", siteId),
+    supabase.from("tenant_orders").select("*", { count: "exact", head: true }).eq("site_id", siteId),
   ]);
-  return {
-    inquiries: inq.count ?? 0,
-    reservations: res.count ?? 0,
-    inventory: inv.count ?? 0,
-  };
-}
 
-export default async function AdminDashboard() {
-  const counts = await getCounts();
+  const cards = [
+    { label: "Inquiries",   value: inq ?? 0,  href: "/admin/inquiries",    color: "#3b82f6" },
+    { label: "Reservations",value: res ?? 0,  href: "/admin/reservations", color: "#a855f7" },
+    { label: "Inventory",   value: prod ?? 0, href: "/admin/inventory",    color: "#10b981" },
+    { label: "Orders",      value: ord ?? 0,  href: "/admin/orders",       color: "#f59e0b" },
+  ];
 
   return (
-    <main className="container-narrow py-12">
-      <div className="flex items-baseline justify-between mb-10">
-        <div>
-          <p className="eyebrow">Admin · Dashboard</p>
-          <h1 className="font-display text-3xl text-white mt-2">Today, at the desk.</h1>
-        </div>
-        <form action="/admin/signout" method="post">
-          <button className="text-white/55 hover:text-amber text-sm">Sign out</button>
-        </form>
-      </div>
+    <div>
+      <h1 style={{ fontSize: 24, fontWeight: 600, marginBottom: 8 }}>Dashboard</h1>
+      <p style={{ color: "#888", fontSize: 14, marginBottom: 32 }}>Welcome back, {user.email}</p>
 
-      <div className="grid sm:grid-cols-3 gap-4 mb-12">
-        <Tile label="Inquiries" value={counts?.inquiries ?? "—"} href="/admin/inquiries" />
-        <Tile label="Reservations" value={counts?.reservations ?? "—"} href="/admin/reservations" />
-        <Tile label="Inventory" value={counts?.inventory ?? "—"} href="/admin/inventory" />
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
+        {cards.map((c) => (
+          <Link key={c.label} href={c.href} style={{
+            background: "#111", border: "1px solid #222", borderRadius: 12,
+            padding: "20px 24px", textDecoration: "none", color: "inherit",
+            display: "block",
+          }}>
+            <div style={{ fontSize: 12, textTransform: "uppercase", letterSpacing: 1, color: "#666", marginBottom: 8 }}>{c.label}</div>
+            <div style={{ fontSize: 32, fontWeight: 700, color: c.color }}>{c.value.toLocaleString()}</div>
+          </Link>
+        ))}
       </div>
-
-      <div className="brushed-card p-8">
-        <p className="font-mono text-[11px] uppercase tracking-eyebrow text-amber/80 mb-3">Notes</p>
-        <ul className="space-y-2 text-white/70 text-[14px]">
-          <li>• The lean admin shell currently exposes counts only. Detail views are scaffolded routes (Inquiries / Reservations / Inventory) ready to be filled out as workflows mature.</li>
-          <li>• Inventory is auto-seeded from <code className="font-mono text-amber/80">content/refined-copy.json</code> at provisioning time.</li>
-          <li>• Public-site form submissions (Contact, Reserve) write directly to the corresponding tables via the <code className="font-mono text-amber/80">/api/contact</code> + <code className="font-mono text-amber/80">/api/reserve</code> endpoints.</li>
-        </ul>
-      </div>
-    </main>
-  );
-}
-
-function Tile({ label, value, href }: { label: string; value: number | string; href: string }) {
-  return (
-    <Link href={href} className="brushed-card p-7 block">
-      <p className="font-mono text-[11px] uppercase tracking-eyebrow text-amber/80">{label}</p>
-      <p className="font-display tabular-nums text-4xl text-white mt-3">{value}</p>
-      <p className="text-white/45 text-sm mt-3">Open →</p>
-    </Link>
+    </div>
   );
 }
