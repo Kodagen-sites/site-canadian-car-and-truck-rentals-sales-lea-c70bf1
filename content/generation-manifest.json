@@ -1,0 +1,84 @@
+{
+  "generation_id": "gen-2026-04-28-canadian-car-and-truck-rentals-sales-lea-c70bf1",
+  "company": "Canadian Car and Truck Rentals, Sales & Leasing",
+  "industry": "auto rental and sales",
+  "voice_family": "V6",
+  "voice_locked_by": "positioning_brief.tone_signals.voice_family_recommended",
+  "archetype": "G",
+  "style": "S5",
+  "style_name": "Industrial Precision",
+  "scene_variant": "V2",
+  "motion_variant": "M3",
+  "card_variant": "CV2",
+  "hero_overlay_variant": "HO2",
+  "hero_text_pattern": "H4",
+  "hero_entrance": "E5",
+  "header_variant": "split-utility",
+  "footer_variant": "FT1",
+  "pdp_variant": null,
+  "about_variant": "AB2",
+  "benefits_variant": "BN1",
+  "contact_variant": "CT1",
+  "work_variant": null,
+  "shop_variant": "SH1",
+  "featured_products_variant": "FP4",
+  "stats_variant": "ST1",
+  "testimonials_variant": null,
+  "cta_variant": "CTA1",
+  "color_variant": "graphite-amber",
+  "color_profile": {
+    "luminance": "dark",
+    "palette": {
+      "graphite": "#0e1218",
+      "steel": "#1a2330",
+      "ash": "#2a3340",
+      "fog": "#5a6470",
+      "ivory": "#f4f5f7",
+      "amber": "#ffaa40",
+      "amber_glow": "#ff8b00"
+    },
+    "text": {
+      "hero": "#ffffff",
+      "body": "rgba(255,255,255,0.78)",
+      "eyebrow": "#ffaa40",
+      "muted": "rgba(255,255,255,0.50)"
+    },
+    "card_overlay": {
+      "tint": "rgba(14,18,24,0.82)",
+      "blur": "xl",
+      "border": "1px solid rgba(255,255,255,0.10)"
+    },
+    "tone_modifier": "industrial"
+  },
+  "industry_object": "wide-stance Silverado 3500 chassis lit by raking shop lights, brushed steel reflections, surrounded by van and trailer silhouettes in soft focus",
+  "accent_motion_variant": null,
+  "scroll_3d_preset": null,
+  "booking_pattern": "page-cinematic",
+  "hero_treatment": "scrubbed-frames",
+  "glass_material": "brushed-metal",
+  "motion_vocabulary": "ease-cinematic",
+  "background_treatment": "layered-photography-parallax",
+  "card_material_variant": "brushed-metal-hover",
+  "motion_bg_pattern": "beam-rays",
+  "motion_bg_density": "subtle",
+  "rolled_at": "2026-04-28T22:11:30Z",
+  "rolled_constraints_applied": {
+    "voice_family_locked": true,
+    "cta_variant_filter": ["CTA1", "CTA2", "CTA4"],
+    "style_filter": ["S5", "S6", "S11"],
+    "auth_strategy": "none",
+    "subscribers_enabled": false,
+    "customer_management_enabled": false
+  },
+  "asset_strategy": {
+    "hero": "regenerate (Veo + Nano Banana)",
+    "section_imagery": "regenerate (Nano Banana)",
+    "logo": "wordmark fallback",
+    "lifestyle_photography": "regenerate (no usable source photography)"
+  },
+  "fonts": {
+    "display": "Space Grotesk",
+    "body": "Inter",
+    "mono": "JetBrains Mono"
+  }
+}

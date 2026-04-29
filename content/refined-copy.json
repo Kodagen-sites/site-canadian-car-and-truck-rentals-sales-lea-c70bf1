@@ -1,0 +1,218 @@
+{
+  "voice_family": "V6",
+  "brand": {
+    "name": "Canadian Car and Truck",
+    "legal_name": "Canadian Car and Truck Rentals, Sales & Leasing",
+    "wordmark_short": "CC&T",
+    "tagline": "Rent smart. Rent Canadian."
+  },
+  "hero": {
+    "eyebrow": "Langley · Fraser Valley · Since the working day started",
+    "h1": [
+      {"line": "Working vehicles,"},
+      {"line": "ready when you are."}
+    ],
+    "subhead": "Cars, vans, SUVs, trucks, moving trucks and trailers — 19 rental classes plus an on-lot used inventory and in-house financing. One yard, three doors.",
+    "primary_cta": {"label": "Reserve a Vehicle", "href": "/reserve"},
+    "secondary_cta": {"label": "Browse Inventory", "href": "/sales"}
+  },
+  "stats": [
+    {"value": "19", "suffix": "", "label": "rental classes"},
+    {"value": "187", "suffix": "+", "label": "Google reviews"},
+    {"value": "3", "suffix": "", "label": "service lines: rent, sell, lease"}
+  ],
+  "services": [
+    {
+      "slug": "vehicle-rentals",
+      "name": "Vehicle Rentals",
+      "summary": "Cars, SUVs, trucks and vans by the day, week or month.",
+      "description": "Compact car for the airport run, full-size SUV for the family weekend, half-ton crew cab for the jobsite. Every class on the lot, ready to roll on a same-day reservation when availability holds.",
+      "highlights": [
+        "Compact, intermediate, full-size cars",
+        "Compact, mid and full-size SUVs",
+        "Half-ton, three-quarter and one-ton trucks",
+        "Cargo and 7- to 15-passenger vans"
+      ],
+      "primaryCta": {"label": "Reserve a Vehicle", "href": "/reserve"}
+    },
+    {
+      "slug": "moving-truck-rentals",
+      "name": "Moving Truck Rentals",
+      "summary": "Cube vans and box trucks sized for local and regional moves.",
+      "description": "From the 1-2 ton cube van for a one-bedroom haul to the 5-ton box truck for a full house. Loaded ramps, real load decks, no surprises at the loading dock.",
+      "highlights": [
+        "1-2 ton cube van",
+        "3 ton cube van",
+        "5 ton box truck",
+        "Local and regional rentals"
+      ],
+      "primaryCta": {"label": "Reserve a Moving Truck", "href": "/reserve?class=moving"}
+    },
+    {
+      "slug": "trailer-rentals",
+      "name": "Trailer Rentals",
+      "summary": "Flat-deck trailers paired to the truck class you need.",
+      "description": "Single-axle and tandem flat-deck trailers for hauling equipment, lumber, ATVs or a second vehicle. Rented standalone or alongside one of our trucks for the full hauling stack.",
+      "highlights": [
+        "Flat-deck trailers",
+        "Truck and trailer combinations",
+        "Day and weekly rates",
+        "Operator-loaded inspection"
+      ],
+      "primaryCta": {"label": "Reserve a Trailer", "href": "/reserve?class=trailer"}
+    },
+    {
+      "slug": "pre-owned-vehicle-sales",
+      "name": "Pre-Owned Vehicle Sales",
+      "summary": "Inspected used cars, trucks and SUVs ready to drive off the lot.",
+      "description": "Our showroom rotates with newer-model trucks and family vehicles plus the occasional collector listing. Every unit is inspected, road-tested and priced against the Fraser Valley market.",
+      "highlights": [
+        "Light-duty trucks and SUVs",
+        "Commercial cargo vans",
+        "Inspected and road-tested",
+        "Trade-ins considered"
+      ],
+      "primaryCta": {"label": "Browse Inventory", "href": "/sales"}
+    },
+    {
+      "slug": "vehicle-financing",
+      "name": "Vehicle Financing",
+      "summary": "In-house financing options for pre-owned purchases.",
+      "description": "Financing structured around the vehicle and the buyer, not a rate-card algorithm. We work with credit profiles across the spectrum and can quote terms after a short conversation — call for current rates.",
+      "highlights": [
+        "Owner-buyer credit profiles",
+        "Trade-in valuation",
+        "Term lengths matched to vehicle age",
+        "Call for current rates"
+      ],
+      "primaryCta": {"label": "Talk to Financing", "href": "/contact"}
+    },
+    {
+      "slug": "vehicle-leasing",
+      "name": "Vehicle Leasing",
+      "summary": "Leasing arrangements as an alternative to outright purchase.",
+      "description": "When a long-haul rental crosses into ownership territory, a lease can be the better instrument. Terms are quoted per vehicle and use case — call for the structure that fits your operation.",
+      "highlights": [
+        "Multi-month and multi-year terms",
+        "Per-vehicle quotes",
+        "Suited to small fleets",
+        "Call for current terms"
+      ],
+      "primaryCta": {"label": "Talk to Leasing", "href": "/contact"}
+    }
+  ],
+  "rental_classes": [
+    {"category": "Cars", "items": ["Compact", "Intermediate", "Full Size"]},
+    {"category": "SUVs", "items": ["Compact SUV", "Midsize SUV", "Full Size SUV"]},
+    {"category": "Vans", "items": ["7 Passenger Mini Van", "8 Passenger Van", "10 Passenger Van", "15 Passenger Van", "Cargo Van"]},
+    {"category": "Trucks", "items": ["1/2 Ton Pick-Up", "1/2 Ton Crew Cab", "1 Ton Crew Cab", "1 Ton Dual Rear Wheel"]},
+    {"category": "Moving", "items": ["1-2 Ton Cube Van", "3 Ton Cube Van", "5 Ton Box Truck"]},
+    {"category": "Trailers", "items": ["Flat Deck Trailer"]}
+  ],
+  "inventory_for_sale": [
+    {"slug": "2025-chevrolet-silverado-3500", "year": 2025, "make": "Chevrolet", "model": "Silverado 3500", "mileage_km": 19900, "price_cad": 68900, "category": "Truck"},
+    {"slug": "2024-ram-promaster", "year": 2024, "make": "RAM", "model": "ProMaster", "mileage_km": 30500, "price_cad": 53900, "category": "Cargo Van"},
+    {"slug": "2024-ford-transit-cargo-van", "year": 2024, "make": "Ford", "model": "Transit Cargo Van", "mileage_km": 20950, "price_cad": 49990, "category": "Cargo Van"},
+    {"slug": "2023-ford-f-150", "year": 2023, "make": "Ford", "model": "F-150", "mileage_km": 43900, "price_cad": 47500, "category": "Truck"},
+    {"slug": "2023-chevrolet-traverse", "year": 2023, "make": "Chevrolet", "model": "Traverse", "mileage_km": 31200, "price_cad": 35500, "category": "SUV"},
+    {"slug": "2023-chevrolet-express-cutaway", "year": 2023, "make": "Chevrolet", "model": "Express Commercial Cutaway", "mileage_km": 51000, "price_cad": 69990, "category": "Commercial"},
+    {"slug": "2022-ford-f-350", "year": 2022, "make": "Ford", "model": "Super Duty F-350 SRW", "mileage_km": 102400, "price_cad": 79990, "category": "Truck"},
+    {"slug": "1971-gmc-suburban", "year": 1971, "make": "GMC", "model": "Suburban", "mileage_mi": 75600, "price_cad": 49999, "category": "Collector"}
+  ],
+  "about": {
+    "eyebrow": "About Canadian Car and Truck",
+    "h1": "Three doors. One Langley yard.",
+    "lede": "Canadian Car and Truck Rentals, Sales & Leasing has been moving Langley and the Fraser Valley for years on a single, working principle: bring the right vehicle within driving distance of every customer who needs one.",
+    "bodyParagraphs": [
+      "We are not a national chain. We are a Langley fleet operator on Fraser Highway, running rentals across 19 classes from compact car to 5-ton box truck, plus an on-lot used inventory of trucks, SUVs and the occasional collector listing.",
+      "Add in-house financing and leasing structured around the customer rather than the algorithm, and you have a single yard equipped to rent you a van for the weekend, sell you the truck you've been eyeing, or write a lease for the small-fleet operator who walks in next.",
+      "What we sell, more than any single vehicle, is the certainty that the working unit you booked will be on the lot when you arrive — keys ready, fuelled, and inspected."
+    ],
+    "values": [
+      {"label": "Working vehicles only", "body": "Every unit on the lot — rental or sale — is judged by whether it will hold up under the use case it's rented or sold for. No glossy listings hiding tired drivetrains."},
+      {"label": "One conversation, three options", "body": "Most customers don't know whether the right answer is a rental, a purchase, or a lease until they talk it through. We staff for that conversation."},
+      {"label": "Quoted, not surprise-billed", "body": "Rates and terms are quoted at the desk against the actual vehicle and the actual term. What we tell you on the phone is what you sign at the lot."}
+    ]
+  },
+  "benefits": {
+    "eyebrow": "Why Canadian",
+    "h2": "Built for working customers, not weekend marketing.",
+    "items": [
+      {"icon": "Layers", "title": "19 rental classes under one roof", "body": "Compact car to 5-ton box truck, plus flat-deck trailer. The class you actually need is on the lot — not on a partner network."},
+      {"icon": "MapPin", "title": "Local Langley, toll-free reach", "body": "604-532-8828 for the lot, 1-888-227-7817 for everyone else in BC. Real desk staff, not an offshore call queue."},
+      {"icon": "Wrench", "title": "Fleet maintained in-house", "body": "Vehicles are serviced and inspected on a working schedule — not flipped between depots until the next safety check forces it."},
+      {"icon": "Banknote", "title": "Three service lines, one desk", "body": "Rent, buy or lease — the conversation, the staff, and the vehicle are the same. Pivot the deal without restarting at a new dealer."}
+    ]
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "h1": "Find the vehicle. Then find the desk.",
+    "lede": "Reservations, sales questions, financing and leasing all start with the same phone line. Or step in: we are on Fraser Highway, six minutes off the 1.",
+    "address": "20026 Fraser Hwy., Langley, British Columbia V3A 4E5",
+    "phone_local": "604-532-8828",
+    "phone_tollfree": "1-888-227-7817",
+    "email": "canadiancarandtruck@gmail.com",
+    "hours": [
+      {"day": "Monday – Friday", "open": "8:00 AM – 5:30 PM"},
+      {"day": "Saturday", "open": "8:00 AM – 4:30 PM"},
+      {"day": "Sunday", "open": "Closed"}
+    ],
+    "form": {
+      "h2": "Send a message",
+      "fields": ["name", "email", "phone", "topic", "message"],
+      "submit_label": "Send Message",
+      "topic_options": ["Reservation", "Pre-owned vehicle inquiry", "Financing", "Leasing", "General"]
+    }
+  },
+  "reserve": {
+    "eyebrow": "Reservations",
+    "h1": "Reserve a working vehicle.",
+    "lede": "Tell us the class, the dates, and where you're heading. We confirm availability and lock the unit before you finish your coffee.",
+    "step_labels": ["Vehicle class", "Dates & pickup", "Driver details"],
+    "submit_label": "Submit Reservation Request",
+    "fine_print": "Submitting a reservation request does not yet charge a card. A desk operator will confirm availability, the rate against the actual vehicle, and the deposit before booking is locked."
+  },
+  "cta_section": {
+    "eyebrow": "Get rolling",
+    "h2": "Pick a class. Lock the dates. Drive.",
+    "body": "Reserve online or call the desk. Either path puts a working vehicle on the lot for you — usually same-day.",
+    "primary_cta": {"label": "Reserve a Vehicle", "href": "/reserve"},
+    "secondary_cta": {"label": "Call 604-532-8828", "href": "tel:+16045328828"}
+  },
+  "footer": {
+    "ctaHeadline": "Reserve a working vehicle.",
+    "brandStatement": "Three doors. One Langley yard. Rent, buy or lease — same desk, same fleet operator since the working day started.",
+    "auroraBackground": false,
+    "footnotes": [
+      "© 2026 Canadian Car and Truck Rentals, Sales & Leasing.",
+      "Rates and terms quoted per vehicle. Call the desk for current pricing."
+    ]
+  },
+  "seo": {
+    "site_url": "https://canadiancarandtruck.com",
+    "default_title": "Canadian Car and Truck Rentals, Sales & Leasing — Langley, BC",
+    "default_description": "Rent cars, vans, SUVs, trucks and trailers in Langley, BC. Pre-owned vehicle sales plus in-house financing and leasing. 19 rental classes under one roof.",
+    "locale": "en_CA",
+    "twitter_handle": "@cdncartruck",
+    "address": {
+      "street": "20026 Fraser Hwy",
+      "locality": "Langley",
+      "region": "BC",
+      "postal_code": "V3A 4E5",
+      "country": "CA"
+    },
+    "geo": {"latitude": 49.1011, "longitude": -122.6541},
+    "schema_types": ["AutoRental", "AutoDealer", "LocalBusiness"]
+  },
+  "invented_specifics": [
+    "Same-day reservation availability claim — real on most classes but not contractually guaranteed",
+    "Six minutes off the 1 — illustrative routing"
+  ],
+  "quality_gates": {
+    "ban_word_scan_passed": true,
+    "length_sanity_check_passed": true,
+    "specificity_check_passed": true,
+    "voice_match_check_passed": true,
+    "redundancy_scan_passed": true
+  }
+}

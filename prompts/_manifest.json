@@ -1,0 +1,36 @@
+{
+  "generation_id": "gen-2026-04-28-canadian-car-and-truck-rentals-sales-lea-c70bf1",
+  "archetype": "G",
+  "style": "S5",
+  "scene_variant": "V2",
+  "motion_variant": "M3",
+  "scenes": [
+    {
+      "id": "scene-1",
+      "type": "veo_video",
+      "files": {
+        "start_image_prompt": "prompts/scene-1/start.txt",
+        "end_image_prompt": "prompts/scene-1/end.txt",
+        "motion_prompt": "prompts/scene-1/motion.txt"
+      },
+      "outputs": {
+        "start_image": "public/frames-source/scene-1-start.jpg",
+        "end_image": "public/frames-source/scene-1-end.jpg",
+        "video": "raw/scene-1.mp4"
+      },
+      "duration_seconds": 8,
+      "model": "veo-3.1-lite-generate-preview",
+      "resolution": "720p",
+      "estimated_cost_usd": 1.45
+    }
+  ],
+  "section_images": [
+    {"id": "section-fleet-grid", "prompt": "prompts/section-fleet-grid.txt", "output": "public/section-fleet-grid.jpg", "model": "gemini-3.1-flash-image-preview", "estimated_cost_usd": 0.04},
+    {"id": "section-truck-detail", "prompt": "prompts/section-truck-detail.txt", "output": "public/section-truck-detail.jpg", "model": "gemini-3.1-flash-image-preview", "estimated_cost_usd": 0.04},
+    {"id": "section-showroom", "prompt": "prompts/section-showroom.txt", "output": "public/section-showroom.jpg", "model": "gemini-3.1-flash-image-preview", "estimated_cost_usd": 0.04},
+    {"id": "section-cube-van", "prompt": "prompts/section-cube-van.txt", "output": "public/section-cube-van.jpg", "model": "gemini-3.1-flash-image-preview", "estimated_cost_usd": 0.04}
+  ],
+  "estimated_total_cost_usd": 1.69,
+  "frames_target_fps": 24,
+  "frames_target_width": 1920
+}

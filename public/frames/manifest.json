@@ -1,0 +1,8 @@
+{
+  "fps": 24,
+  "width": 1920,
+  "frame_count": 192,
+  "duration_seconds": 8.000000,
+  "format": "jpg",
+  "pattern": "frame_%04d.jpg"
+}

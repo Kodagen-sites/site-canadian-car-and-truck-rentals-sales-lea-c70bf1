@@ -1,0 +1,97 @@
+{
+  "slug": "canadian-car-and-truck-rentals-sales-lea-c70bf1",
+  "reference_url": "http://www.canadiancarandtruck.com/",
+  "scrape_method": "WebFetch",
+  "scraped_at": "2026-04-28T22:11:00Z",
+  "site_summary": {
+    "hero_headline": "Rent Smart Rent Canadian!",
+    "primary_offerings": [
+      "Vehicle rentals",
+      "Pre-owned vehicle sales",
+      "Financing",
+      "Leasing"
+    ],
+    "value_props": [
+      "Fast & Easy Vehicle Rentals",
+      "Pre-Owned Vehicles for Sale",
+      "Financing Available"
+    ]
+  },
+  "primary_nav": [
+    "Home",
+    "Rentals",
+    "Available Rentals",
+    "Request a Quote",
+    "Online Showroom",
+    "Car Finder",
+    "Payment Calculator",
+    "Financing",
+    "FAQ",
+    "Contact"
+  ],
+  "contact": {
+    "phone_local": "604-532-8828",
+    "phone_tollfree": "1-888-227-7817",
+    "email": "canadiancarandtruck@gmail.com",
+    "address": "20026 Fraser Hwy., Langley, British Columbia V3A 4E5",
+    "hours": {
+      "monday_friday": "8:00am - 5:30pm",
+      "saturday": "8:00am - 4:30pm",
+      "sunday": "Closed"
+    }
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/canadiancarandtruck",
+    "facebook": "https://www.facebook.com/Canadian-Car-and-Truck-Rentals-Sales-and-Leasing-129368863834916",
+    "twitter": "https://twitter.com/cdncartruck"
+  },
+  "rental_categories": [
+    "Compact Car", "Intermediate Car", "Full Size Car",
+    "Compact SUV", "Midsize SUV", "Full Size SUV",
+    "Mini Van (7 passenger)", "8 Passenger Van", "10 Passenger Van", "15 Passenger Van",
+    "1/2 Ton Pick-Up Truck", "1/2 Ton Crew Cab Truck", "1 Ton Crew Cab Truck", "1 Ton Dual Rear Wheel Truck",
+    "1-2 Ton Cube Van", "3 Ton Cube Van", "5 Ton Box Truck",
+    "Cargo Van", "Flat Deck Trailer"
+  ],
+  "inventory_for_sale": [
+    {"year": 2025, "make": "Chevrolet", "model": "Silverado 3500", "mileage_km": 19900, "price_cad": 68900},
+    {"year": 2024, "make": "RAM", "model": "ProMaster", "mileage_km": 30500, "price_cad": 53900},
+    {"year": 2024, "make": "Ford", "model": "Transit Cargo Van", "mileage_km": 20950, "price_cad": 49990},
+    {"year": 2023, "make": "Ford", "model": "F-150", "mileage_km": 43900, "price_cad": 47500},
+    {"year": 2023, "make": "Chevrolet", "model": "Traverse", "mileage_km": 31200, "price_cad": 35500},
+    {"year": 2023, "make": "Chevrolet", "model": "Express Commercial Cutaway", "mileage_km": 51000, "price_cad": 69990},
+    {"year": 2022, "make": "Ford", "model": "Super Duty F-350 SRW", "mileage_km": 102400, "price_cad": 79990},
+    {"year": 1971, "make": "GMC", "model": "Suburban", "mileage_mi": 75600, "price_cad": 49999}
+  ],
+  "differentiators_real": [
+    {
+      "claim": "Three lines of business under one roof: rentals + sales + financing",
+      "evidence": "Site offers vehicle rentals, pre-owned sales, financing calculator, and lease arrangements"
+    },
+    {
+      "claim": "Full fleet breadth — 19 rental classes from compact car through 5-ton box truck plus flat-deck trailer",
+      "evidence": "rental_categories list"
+    },
+    {
+      "claim": "Toll-free reach across BC and beyond",
+      "evidence": "Toll-free 1-888-227-7817 alongside local 604 line"
+    },
+    {
+      "claim": "On-lot, ready-to-drive used inventory in Langley",
+      "evidence": "8 listed vehicles with prices and mileage live on site"
+    },
+    {
+      "claim": "In-house tools: Payment Calculator and Car Finder",
+      "evidence": "Both linked from primary nav"
+    }
+  ],
+  "tagline_strength": "high",
+  "tagline_verbatim": "Rent Smart Rent Canadian!",
+  "regulator_notices": [],
+  "asset_strategy": "regenerate",
+  "site_quality_signals": {
+    "no_https": true,
+    "no_published_rental_rates": true,
+    "no_lifestyle_photography": true
+  }
+}

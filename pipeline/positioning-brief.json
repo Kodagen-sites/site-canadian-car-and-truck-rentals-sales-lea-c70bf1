@@ -1,0 +1,145 @@
+{
+  "slug": "canadian-car-and-truck-rentals-sales-lea-c70bf1",
+  "synthesized_at": "2026-04-28T22:11:00Z",
+  "what_they_sell": {
+    "primary_offering": "Multi-class vehicle rentals (cars / vans / SUVs / trucks / moving trucks / trailers) and pre-owned vehicle sales with in-house financing and leasing",
+    "is_NOT": [
+      "an exotic / luxury rental house",
+      "a peer-to-peer rental marketplace (e.g. Turo)",
+      "a national chain franchise"
+    ]
+  },
+  "primary_customer": {
+    "primary_segment": "Langley + Fraser Valley residents and small/medium businesses needing utility vehicle access",
+    "secondary_segments": [
+      "Movers and contractors needing trucks, vans, trailers",
+      "Used-car shoppers in the Fraser Valley",
+      "Visitors in BC needing an airport-adjacent rental that reaches the suburbs"
+    ],
+    "is_NOT": [
+      "luxury enthusiasts",
+      "long-haul commercial fleets",
+      "corporate global accounts"
+    ]
+  },
+  "conversion_funnel": {
+    "primary_action": "Reserve a rental vehicle for a target date and class",
+    "primary_cta_options": [
+      "Reserve a Vehicle",
+      "Request a Quote",
+      "Check Availability"
+    ],
+    "secondary_cta_options": [
+      "Browse Inventory",
+      "Call 604-532-8828",
+      "View Rental Classes"
+    ],
+    "explicit_NOT": [
+      "Book a discovery flight",
+      "Order online",
+      "Subscribe",
+      "Start your free trial",
+      "Get instant approval"
+    ]
+  },
+  "tone_signals": {
+    "voice_family_recommended": "V6",
+    "voice_family_rationale": "Industrial / technical brand personality from intake; utility-focused fleet and contractor / business audience reward plain, specific, capability-led copy. Avoid V1 luxury (wrong tier), V3 playful (mismatches utility), V7 dreamy (mismatches working-vehicle promise).",
+    "rejected_voice_families": ["V1", "V3", "V5", "V7"],
+    "tone_keywords_use": [
+      "ready",
+      "reliable",
+      "fleet",
+      "class",
+      "haul",
+      "load",
+      "tonnage",
+      "Langley",
+      "Fraser Valley",
+      "on-lot",
+      "service-line"
+    ],
+    "tone_keywords_avoid": [
+      "discover",
+      "dream",
+      "adventure",
+      "luxurious",
+      "elevate",
+      "indulge",
+      "unleash"
+    ]
+  },
+  "outcome_they_sell": "Confidence that a working vehicle of the exact class needed will be at the customer's hands when needed — without a long-haul booking flow.",
+  "differentiators_real": [
+    "19 rental classes across cars, vans, SUVs, trucks, trailers under one roof",
+    "On-lot used-vehicle sales alongside the rental fleet",
+    "In-house financing + leasing",
+    "Local Langley operations + toll-free reach",
+    "Same business, three doors: rent, buy, lease"
+  ],
+  "discovered_hero_language": {
+    "mission_statement": "Rent Smart Rent Canadian!",
+    "tagline_strength": "high"
+  },
+  "constraints": {
+    "manifest_overrides": {
+      "voice_family": "V6",
+      "cta_variant_filter": ["CTA1", "CTA2", "CTA4"],
+      "style_filter": ["S5", "S6", "S11"],
+      "auth_strategy": "none",
+      "customer_management_enabled": false,
+      "subscribers_enabled": false
+    },
+    "section_rules": {
+      "hero_cta_label_must_match": "primary_cta_options",
+      "secondary_cta_must_match": "secondary_cta_options",
+      "stats_section": "skip if no real numbers; brand has 187 Google reviews + 19 rental classes which qualify",
+      "testimonials_section": "skip — no published testimonials; review badge instead",
+      "featured_inventory": "use real on-lot vehicles from discovered-content.json"
+    },
+    "copy_rules": {
+      "hero_cta_label": "Reserve a Vehicle",
+      "hero_secondary_label": "Browse Inventory",
+      "no_fabricated_rates": true,
+      "no_fabricated_testimonials": true
+    }
+  },
+  "nav_architecture": {
+    "primary": [
+      {"label": "Rentals", "href": "/rentals", "is_dropdown": true, "children": [
+        {"label": "Cars", "href": "/rentals/cars"},
+        {"label": "SUVs", "href": "/rentals/suvs"},
+        {"label": "Vans", "href": "/rentals/vans"},
+        {"label": "Trucks", "href": "/rentals/trucks"},
+        {"label": "Moving Trucks", "href": "/rentals/moving"},
+        {"label": "Trailers", "href": "/rentals/trailers"}
+      ]},
+      {"label": "Sales", "href": "/sales"},
+      {"label": "Financing", "href": "/financing"},
+      {"label": "About", "href": "/about"},
+      {"label": "Contact", "href": "/contact"}
+    ],
+    "primary_cta": {"label": "Reserve a Vehicle", "href": "/reserve"},
+    "footer_columns": [
+      {"heading": "Rentals", "items": [
+        {"label": "Cars & SUVs", "href": "/rentals/cars"},
+        {"label": "Vans", "href": "/rentals/vans"},
+        {"label": "Trucks", "href": "/rentals/trucks"},
+        {"label": "Moving & Trailers", "href": "/rentals/moving"}
+      ]},
+      {"heading": "Sales", "items": [
+        {"label": "Pre-Owned Inventory", "href": "/sales"},
+        {"label": "Financing", "href": "/financing"},
+        {"label": "Leasing", "href": "/financing#leasing"}
+      ]},
+      {"heading": "Company", "items": [
+        {"label": "About", "href": "/about"},
+        {"label": "Contact", "href": "/contact"},
+        {"label": "Reserve", "href": "/reserve"}
+      ]}
+    ],
+    "all_routes_to_generate": [
+      "/", "/rentals", "/sales", "/financing", "/about", "/contact", "/reserve"
+    ]
+  }
+}
